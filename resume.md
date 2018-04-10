@@ -44,7 +44,7 @@ fprintf('%s\n','Matlab');
 | Python      | 3/5 |
 | C++         | 3/5 |
 
-Resume Grading Criteria
+## Resume Grading Criteria
 - [x] different levels of headers
 - [x] block quotes
 - [x] url links

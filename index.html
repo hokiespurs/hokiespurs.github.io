@@ -18,7 +18,7 @@
 
         .map {
             padding: 10px;
-
+            cursor: pointer;
         }
 
         .image {
@@ -42,6 +42,8 @@
         .overlay:hover {
             opacity: 1;
             background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 0px 50px rgb(255, 255, 255);
+            z-index:0;
         }
 
         .text {
@@ -103,28 +105,28 @@
     <!--mx-auto for centering inside flex elements-->
     <div class="row mx-auto text-center">
 
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" style="cursor: pointer;" onclick="window.location = 'https://hokiespurs.github.io/buck-island-ortho-map/'">
             <img src="img/buck.gif" class="image"/>
             <div class="overlay">
-                <div class="text"><h3><a href="https://hokiespurs.github.io/buck-island-ortho-map/" class="projtitle">UAS&nbspMap</a></h3>
+                <div class="text"><h3 class="projtitle">UAS&nbspMap</h3>
                     <small>Buck Island, USVI</small>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" style="cursor: pointer;" onclick="window.location = 'https://hokiespurs.github.io/airportmap/'">
             <img src="img/airport.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="https://hokiespurs.github.io/airportmap/" class="projtitle">Airport&nbspMap</a></h3>
+                <div class="text"><h3 class="projtitle">Airport&nbspMap</h3>
                     <small>US Map of airports</small>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" style="cursor: pointer;" onclick="window.location = 'https://hokiespurs.github.io/uasortho/'">
             <img src="img/ortho.gif" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="https://hokiespurs.github.io/uasortho/" class="projtitle">UAS&nbspFootprint</a></h3>
+                <div class="text"><h3 class="projtitle">UAS&nbspFootprint</h3>
                     <small>Interactive&nbspcamera&nbspfootprint</small>
                 </div>
             </div>
@@ -134,26 +136,26 @@
 
     <div class="row mx-auto text-center">
 
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" style="cursor: pointer;" onclick="window.location = 'https://github.com/hokiespurs/general-purpose-matlab'">
             <img src="img/matlab.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="https://github.com/hokiespurs/general-purpose-matlab" class="projtitle">Matlab&nbspScripts</a></h3>
+                <div class="text"><h3 class="projtitle">Matlab&nbspScripts</h3>
                     <small>General Purpose Functions</small>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" style="cursor: pointer;" onclick="window.location = 'https://hokiespurs.github.io/usvi-watermark-2017/'">
             <img src="img/watermark.gif" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="https://hokiespurs.github.io/usvi-watermark-2017/" class="projtitle">Storm&nbspSurge</a></h3>
+                <div class="text"><h3 class="projtitle">Storm&nbspSurge</h3>
                     <small>Post&nbsphurricanes&nbspMaria&nbspand&nbspIrma</small>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-lg-4 map">
+        <div class="col-md-4 col-lg-4 map" onclick="window.location = 'https://github.com/hokiespurs/learnbook/blob/leastsquares/learnbook.pdf'">
             <img src="img/learnbook.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="https://github.com/hokiespurs/learnbook/blob/leastsquares/learnbook.pdf" class="projtitle">Learnbook</a></h3>
+                <div class="text"><h3 class="projtitle">Learnbook</h3>
                     <small>Informal textbook</small>
                 </div>
             </div>
@@ -165,7 +167,7 @@
     <footer class="container">
 
         <div class="row justify-content-center align-items-center">
-            <p> Richie Slocum, Oregon State University, 2017 </p>
+            <p> Richie Slocum, Oregon State University, 2018 </p>
         </div>
 
         <div class="row justify-content-center align-items-center">

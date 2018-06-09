@@ -144,7 +144,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="row mx-auto text-center">
@@ -238,8 +237,36 @@
             <a href="#" target="_blank"><img src="img/osu.png" height="100"></a>
         </div>
     </footer>
-
 </div>
+<script>
+    $('.map').on('mouseenter',change2gif)
+    $('.map').on('mouseleave',change2png)
+
+    function change2gif(){
+        console.log(this);
+        filename = this.children[0].src;
+        newfilename = filename.substring(0,filename.length-3) + 'gif';
+        if(UrlExists(newfilename)) {
+            this.children[0].src = newfilename;
+        }
+    }
+    function change2png(){
+        console.log(this);
+        filename = this.children[0].src;
+        newfilename = filename.substring(0,filename.length-3) + 'png';
+        if(UrlExists(newfilename)) {
+            this.children[0].src = newfilename;
+        }
+    }
+
+    function UrlExists(url)
+    {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        return http.status!=404;
+    }
+</script>
 </body>
 
 </html>
